@@ -1,0 +1,32 @@
+{
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "files.associations": {
+        "*.h": "cpp"
+    },
+    // "clangd.path": "/usr/bin/clangd",
+    "clangd.path": "/home/test/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/20.1.0/clangd_20.1.0/bin/clangd",
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--all-scopes-completion",
+        "--log=verbose",              // 最高日志级别
+        "--background-index",
+        "--pch-storage=disk",         // 将预编译头存储在磁盘，提高性能
+        "--header-insertion-decorators", // 显示代码动作的装饰器
+        "--completion-style=detailed",  // 详细完成信息
+        "--function-arg-placeholders",  // 为函数参数显示占位符文本
+        "--clang-tidy",               // 启用 Clang-Tidy
+        "-j=8",                       // 使用更多线程进行索引
+        "--query-driver=/usr/bin/g++*"  // 帮助检测系统头文件
+    ],
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.trace": "verbose",         // 提升 VS Code 插件侧日志级别
+    "clangd.onConfigChanged": "restart", // 配置更改时重启 LSP
+    "clangd.detectConfigChanges": true, // 自动检测配置变更
+    "clangd.checkUpdates": true,       // 检查 clangd 更新
+    "clangd.diagnosticMode": "workspace", // 在整个工作区应用诊断
+    "clangd.initialBlacklist": [],     // 不使用黑名单
+    "clangd.semanticHighlighting": true,
+    "cmake.sourceDirectory": "/home/test/桌面/collison_detection/src/collison_visualize", // 启用语义高亮
+}
