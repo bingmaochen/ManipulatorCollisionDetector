@@ -1,0 +1,6 @@
+[submodule "src/collison_visualize/dependencies/fcl"]
+	path = src/collison_visualize/dependencies/fcl
+	url = https://github.com/flexible-collision-library/fcl
+[submodule "src/collison_visualize/dependencies/libccd"]
+	path = src/collison_visualize/dependencies/libccd
+	url = https://github.com/danfis/libccd
